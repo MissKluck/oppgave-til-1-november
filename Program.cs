@@ -7,6 +7,7 @@ class Program
 {
     public static void Main()
     {
+        // test for creating a text file
         try
         {
             string path = "test.txt";
@@ -37,6 +38,7 @@ class Program
 
         Console.WriteLine("\n");
 
+        // creates a new person.json document
         try
         {
             string filePath = "person.json";
@@ -48,13 +50,14 @@ class Program
             else
             {
                 string existingJSON = File.ReadAllText(filePath);
-                Console.WriteLine($"DataAlready exists within the file person.json {File.ReadAllText(filePath)}");
+                Console.WriteLine($"Data already exists within the file person.json {File.ReadAllText(filePath)}");
                 if (!string.IsNullOrWhiteSpace(existingJSON))
                 {
                     persons = JsonSerializer.Deserialize<List<Person>>(existingJSON);
                 }
             }
 
+            // The questions that will appear in the terminal
             Console.WriteLine("What is your name?");
             string? name = Console.ReadLine();
             Console.WriteLine("How old are you?");
@@ -70,6 +73,7 @@ class Program
             Console.WriteLine("What position do you have in the story?");
             string? position = Console.ReadLine();
 
+            // create a new object that uses the blueprint from the Person.cs class nd is formated with json
             var person = new Person
             {
                 Name = name,
@@ -78,6 +82,9 @@ class Program
                 Position = position,
             };
             Console.WriteLine($"Your name is {person.Name}. You are {person.Age}, you're from {person.Place}, and you're the {person.Position} in the Princess Bride.");
+            // overwrites json and makes it pretty print
+            string json = JsonSerializer.Serialize(person, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(filePath, json);
         }
         catch (IOException exception)
         {
