@@ -45,7 +45,7 @@ class Program
             string filePath = "person.json";
 
             // read from the data tht exists within the person.json file
-            List<Person> persons = new List<Person>();
+            List<Person>? persons = new List<Person>();
             if (!File.Exists(filePath))
             {
                 string existingJSON = File.ReadAllText(filePath);
@@ -89,7 +89,7 @@ class Program
                 Place = place,
                 Position = position,
             };
-            persons.Add(newPerson);
+            persons?.Add(newPerson);
             Console.WriteLine($"Your name is {newPerson.Name}. You are {newPerson.Age}, you're from {newPerson.Place}, and you're the {newPerson.Position} in the Princess Bride.");
             // overwrites json and makes it pretty print
             string json = JsonSerializer.Serialize(persons, new JsonSerializerOptions { WriteIndented = true });
