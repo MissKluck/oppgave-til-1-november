@@ -1,0 +1,15 @@
+/Users/Sigrid/Documents/C#/oppgave til 1 november/bin/Debug/net8.0/oppgave til 1 november
+/Users/Sigrid/Documents/C#/oppgave til 1 november/bin/Debug/net8.0/oppgave til 1 november.deps.json
+/Users/Sigrid/Documents/C#/oppgave til 1 november/bin/Debug/net8.0/oppgave til 1 november.runtimeconfig.json
+/Users/Sigrid/Documents/C#/oppgave til 1 november/bin/Debug/net8.0/oppgave til 1 november.dll
+/Users/Sigrid/Documents/C#/oppgave til 1 november/bin/Debug/net8.0/oppgave til 1 november.pdb
+/Users/Sigrid/Documents/C#/oppgave til 1 november/obj/Debug/net8.0/oppgave til 1 november.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Sigrid/Documents/C#/oppgave til 1 november/obj/Debug/net8.0/oppgave til 1 november.AssemblyInfoInputs.cache
+/Users/Sigrid/Documents/C#/oppgave til 1 november/obj/Debug/net8.0/oppgave til 1 november.AssemblyInfo.cs
+/Users/Sigrid/Documents/C#/oppgave til 1 november/obj/Debug/net8.0/oppgave til 1 november.csproj.CoreCompileInputs.cache
+/Users/Sigrid/Documents/C#/oppgave til 1 november/obj/Debug/net8.0/oppgave til 1 november.sourcelink.json
+/Users/Sigrid/Documents/C#/oppgave til 1 november/obj/Debug/net8.0/oppgave til 1 november.dll
+/Users/Sigrid/Documents/C#/oppgave til 1 november/obj/Debug/net8.0/refint/oppgave til 1 november.dll
+/Users/Sigrid/Documents/C#/oppgave til 1 november/obj/Debug/net8.0/oppgave til 1 november.pdb
+/Users/Sigrid/Documents/C#/oppgave til 1 november/obj/Debug/net8.0/oppgave til 1 november.genruntimeconfig.cache
+/Users/Sigrid/Documents/C#/oppgave til 1 november/obj/Debug/net8.0/ref/oppgave til 1 november.dll
