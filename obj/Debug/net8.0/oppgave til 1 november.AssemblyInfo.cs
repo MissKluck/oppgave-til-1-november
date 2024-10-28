@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("oppgave til 1 november")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96f04f9833551b7e85cc05619a406e6f1c7164e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff53eedb8de98d4f63e4677f23df99935ebba8df")]
 [assembly: System.Reflection.AssemblyProductAttribute("oppgave til 1 november")]
 [assembly: System.Reflection.AssemblyTitleAttribute("oppgave til 1 november")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

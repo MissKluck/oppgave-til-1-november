@@ -41,11 +41,19 @@ class Program
         // creates a new person.json document
         try
         {
+            // the filepath for our person.json file --> tells the compiler that this is the filepath we'll be using
             string filePath = "person.json";
-            List<Person>? persons = new List<Person>();
+
+            // read from the data tht exists within the person.json file
+            List<Person> persons = new List<Person>();
             if (!File.Exists(filePath))
             {
-                File.CreateText(filePath);
+                string existingJSON = File.ReadAllText(filePath);
+                Console.WriteLine($"Data already exists within the file person.json {File.ReadAllText(filePath)}");
+                if (!string.IsNullOrWhiteSpace(existingJSON))
+                {
+                    persons = JsonSerializer.Deserialize<List<Person>>(existingJSON);
+                }
             }
             else
             {
@@ -74,16 +82,17 @@ class Program
             string? position = Console.ReadLine();
 
             // create a new object that uses the blueprint from the Person.cs class nd is formated with json
-            var person = new Person
+            var newPerson = new Person
             {
                 Name = name,
                 Age = age,
                 Place = place,
                 Position = position,
             };
-            Console.WriteLine($"Your name is {person.Name}. You are {person.Age}, you're from {person.Place}, and you're the {person.Position} in the Princess Bride.");
+            persons.Add(newPerson);
+            Console.WriteLine($"Your name is {newPerson.Name}. You are {newPerson.Age}, you're from {newPerson.Place}, and you're the {newPerson.Position} in the Princess Bride.");
             // overwrites json and makes it pretty print
-            string json = JsonSerializer.Serialize(person, new JsonSerializerOptions { WriteIndented = true });
+            string json = JsonSerializer.Serialize(persons, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(filePath, json);
         }
         catch (IOException exception)
