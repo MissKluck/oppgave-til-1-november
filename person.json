@@ -3,6 +3,12 @@
     "Name": "Buttercup",
     "Age": 20,
     "Place": "Florin",
-    "Position": "Princess"
+    "Position": "Love interest"
+  },
+  {
+    "Name": "Westley",
+    "Age": 20,
+    "Place": "Florin",
+    "Position": "Hero"
   }
 ]
